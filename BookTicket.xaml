@@ -1,0 +1,35 @@
+﻿<Window x:Class="Avia1.BookTicket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Book Ticket" Height="300" Width="400">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Destination:"/>
+        <ComboBox x:Name="destinationComboBox" Grid.Row="0" Margin="100,0,0,5"/>
+
+        <Label Grid.Row="1" Content="Trip Type:"/>
+        <ComboBox x:Name="tripTypeComboBox" Grid.Row="1" Margin="100,0,0,5"/>
+
+        <Label Grid.Row="2" Content="Class:"/>
+        <ComboBox x:Name="classComboBox" Grid.Row="2" Margin="100,0,0,5"/>
+
+        <Label Grid.Row="3" Content="Full Name:"/>
+        <TextBox x:Name="fullNameTextBox" Grid.Row="3" Margin="100,0,0,5"/>
+
+        <Label Grid.Row="4" Content="Email:"/>
+        <TextBox x:Name="emailTextBox" Grid.Row="4" Margin="100,0,0,5"/>
+
+        <Button Grid.Row="5" Content="Book Ticket" Click="BookTicket_Click" HorizontalAlignment="Center" Width="100" Margin="0,10,0,0"/>
+
+       
+    </Grid>
+</Window>

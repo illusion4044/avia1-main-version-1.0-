@@ -1,0 +1,24 @@
+﻿<Window x:Class="Avia1.TicketBase" Background="CornflowerBlue"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Avia1"
+        mc:Ignorable="d"
+        Title="TicketBase" Height="450" Width="800">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <DataGrid x:Name="ticketBaseDataGrid" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" Height="302" Width="765" AutoGenerateColumns="False">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Destination" Binding="{Binding Destination}" />
+                <DataGridTextColumn Header="Trip Type" Binding="{Binding TripType}" />
+                <DataGridTextColumn Header="Class" Binding="{Binding Class}" />
+                <DataGridTextColumn Header="Full Name" Binding="{Binding FullName}" />
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="362,348,0,0" Click="BackButton_Click"
+                Background="White" Foreground="CornflowerBlue"/>
+    </Grid>
+</Window>
